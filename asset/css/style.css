@@ -1,0 +1,94 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.grid_contenido {
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "ml mp mp"
+        "f f f";
+    gap: 10px;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-columns: 1fr 8fr;
+    height: 65rem;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg?w=2000);
+}
+
+header {
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+menu {
+    grid-area: ml;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border: solid;
+    border-color: aqua;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEeksUY2JKtd5CQn_9duI5QvxV5EaJv7uDA&usqp=CAU);
+}
+
+main {
+    grid-area: mp;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 80px;
+}
+
+footer {
+    grid-area: f;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.imagen_perro {
+    width: 285px;
+    height: 150px;
+    border-radius: 15%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+h1 {
+    background-color: snow;
+    border-radius: 10%;
+}
+
+.card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: aqua;
+    background-color: white;
+    text-align: center;
+    border-radius: 8%;
+}
+
+.compra {
+    background-color: white;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color:white;
+    background-color: aqua;
+    border: solid;
+    border-color: aquamarine;
+    border-radius: 25%;
+}
